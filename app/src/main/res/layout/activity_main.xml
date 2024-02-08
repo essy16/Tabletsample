@@ -15,7 +15,7 @@
         app:layout_constraintDimensionRatio="0.5:0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/vinlogo" />
+        app:srcCompat="@drawable/no_bg__v11_tech_logo__blue__8__6" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"

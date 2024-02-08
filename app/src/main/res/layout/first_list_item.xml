@@ -2,49 +2,65 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintDimensionRatio="1:1">
+        android:layout_width="155dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="@drawable/border_background">
-
-            <ImageView
-                android:id="@+id/foodImage"
+            android:background="@drawable/border_background"
+            android:orientation="vertical">
+            <!-- Image View -->
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/ic_launcher_background" />
-            <TextView
-                android:id="@+id/circleBackgroundText"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:fontFamily="@font/pirata_one"
-                android:text="T1"
-                android:layout_gravity="center"
-                android:src="@drawable/circle_background"
-                 />
+                android:layout_height="160dp">
+                <ImageView
+                    android:id="@+id/foodImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher_background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/circleBackgroundText"
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="150dp"
+
+                    android:background="@drawable/circle_background"
+                    android:gravity="center"
+                    android:text="T1" />
+
+            </RelativeLayout>
 
             <LinearLayout
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+               android:orientation="vertical"
                 android:background="@drawable/border_background">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="@drawable/border_background">
+                    android:layout_height="20dp"
+                    android:background="@drawable/border_background"
+                    >
 
                     <LinearLayout
                         android:layout_width="75dp"
-                        android:layout_height="match_parent">
+                        android:layout_height="20dp"
+                        android:background="@drawable/border_background"
+                        >
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -55,19 +71,12 @@
                             android:id="@+id/numberOfPeople"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/pirata_one"
                             android:text="03/03"
                             android:textStyle="bold" />
-
-
                     </LinearLayout>
-
-
                     <LinearLayout
                         android:layout_width="75dp"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/border_background">
-
+                        android:layout_height="20dp">
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -77,25 +86,21 @@
                             android:id="@+id/time"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/pirata_one"
                             android:text="03/03"
                             android:textStyle="bold" />
-
 
                     </LinearLayout>
 
 
-
-
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/border_background">
+                    android:layout_height="20dp">
+
                     <LinearLayout
                         android:layout_width="75dp"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/border_background">
+                        android:layout_height="20dp">
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -106,17 +111,13 @@
                             android:id="@+id/amount"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/pirata_one"
                             android:text="03/03"
                             android:textStyle="bold" />
-
-
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="75dp"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/border_background">
+                        android:layout_height="20dp">
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -127,17 +128,19 @@
                             android:id="@+id/statusOfPayment"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/pirata_one"
                             android:text="03/03"
                             android:textStyle="bold" />
 
-
                     </LinearLayout>
+
+
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
 
-    </androidx.cardview.widget.CardView>
 
+
+
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

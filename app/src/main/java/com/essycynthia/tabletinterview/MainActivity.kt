@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         binding.firstRecyclerView.layoutManager = LinearLayoutManager(this)
         binding.firstRecyclerView.adapter = firstAdapter
         binding.firstRecyclerView.setHasFixedSize(true)
-        binding.secondRecyclerView.layoutManager = GridLayoutManager(this,4)
+        binding.secondRecyclerView.layoutManager = GridLayoutManager(this,2)
         binding.secondRecyclerView.adapter = secondAdapter
         binding.secondRecyclerView.setHasFixedSize(true)
         binding.thirdRecyclerView.layoutManager = LinearLayoutManager(this)

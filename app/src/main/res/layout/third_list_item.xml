@@ -16,11 +16,10 @@
         android:id="@+id/thirdFoodName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         android:text="FoodName"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/anotherFoodAmount"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -37,9 +36,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="TextView"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="331dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/anotherFoodAmount"
@@ -65,10 +65,11 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/anotherFoodAmount"
         app:layout_constraintTop_toBottomOf="@+id/timesOfOrder"
-        app:srcCompat="@drawable/trash_11776614_1"
-        tools:layout_editor_absoluteX="236dp" />
+        app:srcCompat="@drawable/trash_11776614_1" />
 
     <TextView
         android:id="@+id/sizeOfFood"
