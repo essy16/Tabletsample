@@ -22,13 +22,16 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/vinlogo" />
 
-        <SearchView
+        <android.widget.SearchView
             android:id="@+id/simpleSearchView"
             android:layout_width="500dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
+            android:background="#808080"
             android:gravity="center"
+            android:queryHint="Search here..."
+            android:queryHintTextColor="#FFFFFF"
             android:layoutDirection="rtl"
             android:searchIcon="@drawable/search_954591_1"
             app:layout_constraintTop_toTopOf="parent"
@@ -63,6 +66,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/time_history" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="92dp">
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -113,13 +124,36 @@
         android:id="@+id/thirdLinearLayout"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:layout_marginTop="0dp"
         android:orientation="vertical"
         app:layout_constraintStart_toEndOf="@id/secondRecyclerView"
-        app:layout_constraintTop_toTopOf="@+id/secondLinearLayout">
-
+        app:layout_constraintTop_toBottomOf="@+id/secondLinearLayout">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/breakfast_6540381_1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Table number : T1"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Order #00123"
+                android:textSize="20sp" />
+
 
         </LinearLayout>
 
